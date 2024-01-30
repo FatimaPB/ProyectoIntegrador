@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesaje actual</title>
+    <style>
+       .outer-container {
+            width: 460px;
+            height: 740px;
+            margin: auto;
+            overflow: hidden;
+            border: 3px solid #000;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .contenedor {
+            margin-top: 4px;
+            border: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .rectangulo {
+            width: 45%;
+            margin-bottom: 10px;
+            background-color: rgba(224, 231, 233, 0.485);
+            box-sizing: border-box;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .rectangulo img {
+            width: 50%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            margin: 0 0px;
+        }
+
+        .pe {
+            text-align: center;
+        }
+
+        .la {
+            text-align: center;
+            background-color: orange;
+            width: 80%;
+            margin-left: 50px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center; /* Centra los elementos horizontalmente */
+            align-items: center; /* Centra los elementos verticalmente */
+            margin-top: 20px;
+        }
+
+        footer button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer img {
+            display: inline-block;
+            width: 60px;
+            margin: 0 1px;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+
+        .pie {
+            display: inline-block;
+            margin: 0 1px;
+            padding-left: 40px;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .letras {
+            margin: 0 2px;
+        }
+
+        .abajo {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="outer-container">
+        <h3 class="pe">Pesaje actual</h3>
+        <h3 class="pe">29/10/2024 | 7:26</h3>
+        <h3 class="la">54 KG</h3>
+        <div class="contenedor">
+            <div class="rectangulo">
+                <img src="prendas.png" alt="Descripción de la imagen">
+                <p class="letras">Talla: S</p>
+                <p class="letras">Descripción: Camiseta azul</p>
+                <p class="letras">Precio: $20</p>
+            </div>
+            <div class="rectangulo">
+                <img src="prendas.png" alt="Descripción de la imagen">
+                <p class="letras">Talla: M</p>
+                <p class="letras">Descripción: Pantalón negro</p>
+                <p class="letras">Precio: $30</p>
+            </div>
+            <div class="rectangulo">
+                <img src="prendas.png" alt="Descripción de la imagen">
+                <p class="letras">Talla: L</p>
+                <p class="letras">Descripción: Chaqueta roja</p>
+                <p class="letras">Precio: $40</p>
+            </div>
+            <div class="rectangulo">
+                <img src="prendas.png" alt="Descripción de la imagen">
+                <p class="letras">Talla: XL</p>
+                <p class="letras">Descripción: Vestido floral</p>
+                <p class="letras">Precio: $25</p>
+            </div>
+            <div class="rectangulo">
+                <img src="prendas.png" alt="Descripción de la imagen">
+                <p class="letras">Talla: S</p>
+                <p class="letras">Descripción: Zapatos negros</p>
+                <p class="letras">Precio: $50</p>
+            </div>
+            <div class="rectangulo">
+                <img src="prendanegra.png" alt="Descripción de la imagen">
+                <p class="letras">Talla: M</p>
+                <p class="letras">Descripción: Bolso de cuero</p>
+                <p class="letras">Precio: $35</p>
+            </div>
+        </div>
+        <div>
+            <footer>
+                <button class="abajo">
+                    <img src="inicio.png" alt="Descripción de la imagen">
+                    <p class="pie">Pagina de inicio</p>
+                </button>
+                <button class="abajo">
+                    <img src="pesado.png" alt="Descripción de la imagen">
+                    <p class="pie">Pesado</p>
+                </button>
+                <button class="abajo">
+                    <img src="ajustes.png" alt="Descripción de la imagen">
+                    <p class="pie">Ajustes</p>
+                </button>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

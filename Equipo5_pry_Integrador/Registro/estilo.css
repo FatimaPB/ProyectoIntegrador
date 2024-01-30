@@ -1,0 +1,229 @@
+
+/* Estilo del contenedor del teléfono */
+.telefono {
+    width: 460px; /* Ancho del teléfono */
+    height: 870px; /* Altura del teléfono */
+    border: 3px solid #000; /* Borde del teléfono */
+    border-radius: 20px; /* Esquinas redondeadas del teléfono */
+    margin: auto; /* Centra el teléfono en la pantalla */
+    overflow: hidden; /* Para ocultar el contenido que se desborda del teléfono */
+    position: relative; /* Posiciona el botón circular con respecto a este contenedor */
+    margin-top: 50px;
+    background-color: #ffffff;
+}
+
+/* Estilo del contenedor principal */
+.contenedor-principal {
+    width: 100%; /* Ancho completo del contenedor del teléfono */
+    height: 100%; /* Altura completa del contenedor del teléfono */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    padding: 40px; /* Espaciado interno del contenedor del teléfono */
+    display: flex; /* Hace que los elementos dentro del contenedor principal sean flexibles */
+    flex-direction: column; /* Coloca los elementos en una columna */
+     /* Distribuye el espacio verticalmente entre los elementos */
+     margin-top: 0px;
+
+}
+
+/* Estilo del contenedor de la imagen y el texto */
+.contenedor {
+    width: 100%; /* Ancho completo del contenedor principal */
+    border: 2px solid #060606; /* Borde del contenedor */
+    overflow: hidden; /* Para recortar cualquier contenido que se desborde */
+    position: relative; /* Para posicionar elementos hijos de manera absoluta */
+    margin-bottom: 0px; /* Espacio inferior entre el recuadro y los botones */
+    display: flex; /* Hace que los elementos dentro del contenedor sean flexibles */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    margin-block-end: 50px;
+}
+
+/* Estilo del contenedor de la imagen */
+.imagen-contenedor {
+    position: relative; /* Posiciona la imagen de manera absoluta con respecto a este contenedor */
+    width: 180%; /* Ancho completo del contenedor de la imagen */
+    display: flex;
+    margin-left: 30px;
+    margin-block-end: 10px;
+}
+
+/* Estilo de la imagen dentro del contenedor de la imagen */
+.contenedor img {
+    width: 40%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Elimina el espacio adicional por debajo de la imagen */
+    margin-top: 30px;
+    margin-left: 8px;
+    margin-block-end: 0px;
+}
+
+
+/* Estilo del contenedor del texto */
+.texto-contenedor {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mejorar la legibilidad */
+    padding: 10px; /* Espaciado interno para mayor legibilidad */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    width: 100%; /* Ancho completo del contenedor de texto */
+  
+}
+
+/* Estilo del texto */
+.texto {
+    margin: 0; /* Elimina el margen predeterminado para el párrafo */
+}
+/* Estilo de los botones */
+.botones {
+    border: 2px solid #000000; /* Borde del contenedor */
+    display: flex; /* Hace que los botones sean flexibles */
+    justify-content: center; /* Centra los botones horizontalmente */
+    width: 50%; /* Ancho completo del contenedor principal */
+    margin-bottom: 20px; /* Espacio inferior entre los botones y el botón de compra */
+    border-radius: 20px;
+    margin-left: 70px;
+}
+
+.boton {
+    padding: 10px;
+    background-color: #797c7d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px; /* Espaciado a la izquierda y derecha entre los botones */
+    border-radius: 100px;
+    margin-top: 5px;
+    margin-block-end: 5px;
+}
+.datos{
+    margin-top: 60px;
+        margin-left: 10px; /* Ajusta el espacio entre los elementos de texto */
+        display: flex;
+        flex-direction: column; /* Muestra los elementos en columna (uno debajo del otro) */
+    }
+    .alias{
+        margin-left: 50px;
+        margin-block-start: 5px;
+    }
+.con{
+    margin-top:30px;
+    margin-left: 20px;
+    margin-block-end: 0px;
+    text-align: center;
+}
+.botonarriba{
+    margin-left: 20px;
+    border-radius: 100px;
+    background-color: #797c7d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-block-end: 0px;
+}
+.boton1 {
+    border: none;
+    cursor: pointer;
+}
+.deta{
+    text-align: center;
+}
+.pro{
+    text-align: center;
+}
+.boton2{
+    margin-left: 18px;
+    width: 40%;
+    background-color: #ce975c;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    
+}
+.vermas{
+    margin-block-start: 80px;
+    margin-bottom: 40px;
+    border: none;
+    cursor: pointer;
+    margin-left: 100px;
+    background-color:#ffffff;
+}
+footer {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-top: 120px;
+}
+
+footer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+footer img {
+    display: inline-block;
+    width: 60px;
+    margin: 0 1px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.pie {
+    display: inline-block;
+    margin: 0 1px;
+    padding-left: 40px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.letras {
+    margin: 0 2px;
+}
+
+.abajo {
+    border: none;
+}
+.modelo{
+    width: 100px;
+    height: 30px;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+  border: #ce975c;
+}
+
+label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: white;
+  padding: 0 5px;
+  z-index: 1;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 5px;
+}
+.Cancelar{
+    color: #ce975c;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-size: 30px;
+    border: 3px solid orange; 
+    margin-right: 20px;
+    width: 40%;
+}
+.Crear{
+    color:#ffffff;
+    background-color: #ce975c;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+}

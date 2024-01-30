@@ -1,0 +1,172 @@
+
+/* Estilo del contenedor del teléfono */
+.telefono {
+    width: 460px; /* Ancho del teléfono */
+    height: 740px; /* Altura del teléfono */
+    border: 3px solid #000; /* Borde del teléfono */
+    border-radius: 20px; /* Esquinas redondeadas del teléfono */
+    margin: auto; /* Centra el teléfono en la pantalla */
+    overflow: hidden; /* Para ocultar el contenido que se desborda del teléfono */
+    position: relative; /* Posiciona el botón circular con respecto a este contenedor */
+    margin-top: 50px;
+    background-color:rgb(255, 255, 255);
+}
+
+/* Estilo del contenedor principal */
+.contenedor-principal {
+    width: 100%; /* Ancho completo del contenedor del teléfono */
+    height: 100%; /* Altura completa del contenedor del teléfono */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    padding: 40px; /* Espaciado interno del contenedor del teléfono */
+    display: flex; /* Hace que los elementos dentro del contenedor principal sean flexibles */
+    flex-direction: column; /* Coloca los elementos en una columna */
+     /* Distribuye el espacio verticalmente entre los elementos */
+     margin-top: 1px;
+}
+
+/* Estilo del contenedor de la imagen y el texto */
+.contenedor {
+    width: 100%; /* Ancho completo del contenedor principal */
+    height: 150px;
+    border: 2px solid #000000; /* Borde del contenedor */
+    overflow: hidden; /* Para recortar cualquier contenido que se desborde */
+    position: relative; /* Para posicionar elementos hijos de manera absoluta */
+    margin-bottom: 0px; /* Espacio inferior entre el recuadro y los botones */
+    display: flex; /* Hace que los elementos dentro del contenedor sean flexibles */
+    flex-direction: column; /* Coloca los elementos en una columna */
+   justify-content: center;
+   margin-block-end: 1px;
+   border-radius: 20px;
+   background-color: #fdfdfd;
+   margin-top: 5px;
+}
+
+/* Estilo del contenedor de la imagen */
+.imagen-contenedor {
+    position: relative; /* Posiciona la imagen de manera absoluta con respecto a este contenedor */
+    width: 100%; /* Ancho completo del contenedor de la imagen */
+}
+
+/* Estilo de la imagen dentro del contenedor de la imagen */
+.contenedor img {
+    width: 50%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Elimina el espacio adicional por debajo de la imagen */
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-block-end: 20px;
+}
+
+/* Estilo del botón circular */
+.boton-circular {
+    position: absolute; /* Posiciona el botón de manera absoluta con respecto al contenedor principal */
+    top: 10px; /* Posiciona el botón a 10px desde la parte superior del contenedor principal */
+    right: 10px; /* Posiciona el botón a 10px desde la parte derecha del contenedor principal */
+    width: 30px; /* Ancho del botón */
+    height: 30px; /* Altura del botón */
+    background-color: #fdfdfd;
+    color: #000000;
+    border: none;
+    border-radius: 50%; /* Hace que el botón sea circular */
+    cursor: pointer;
+    font-size: 14px;
+    display: flex; /* Hace que el contenido dentro del botón sea flexible */
+    align-items: center; /* Centra el contenido verticalmente dentro del botón */
+    justify-content: center; /* Centra el contenido horizontalmente dentro del botón */
+    border: 2px solid #000; /* Borde del teléfono */
+}
+
+/* Estilo del contenedor del texto */
+.texto-contenedor {
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mejorar la legibilidad */
+    padding: 10px; /* Espaciado interno para mayor legibilidad */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    width: 100%; /* Ancho completo del contenedor de texto */
+}
+
+/* Estilo del texto */
+.texto {
+    margin: 0; /* Elimina el margen predeterminado para el párrafo */
+}
+/* Estilo de los botones */
+.botones {
+    border: 2px solid #000000; /* Borde del contenedor */
+    display: flex; /* Hace que los botones sean flexibles */
+    justify-content: center; /* Centra los botones horizontalmente */
+    width: 50%; /* Ancho completo del contenedor principal */
+    margin-bottom: 20px; /* Espacio inferior entre los botones y el botón de compra */
+    border-radius: 20px;
+    margin-left: 70px;
+}
+
+.boton {
+    padding: 10px;
+    background-color: #797c7d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px; /* Espaciado a la izquierda y derecha entre los botones */
+    border-radius: 100px;
+    margin-top: 5px;
+    margin-block-end: 5px;
+}
+
+
+/* Estilo del botón de compra */
+.boton-compra {
+    
+    padding: 15px;
+    background-color: #b66a3a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    flex: 1; /* Hace que el botón de compra ocupe el mismo espacio que los botones */
+    margin-block-end: 80px;
+    width: 101.38%;
+   
+}
+.botonarriba{
+    margin-top: 25px;
+    margin-left: 380px;
+    color: #b66a3a;
+    font-size: 50px;
+    background-color:rgb(255, 255, 255);
+    border: none;
+}
+footer {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-top: 20px;
+}
+
+footer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+footer img {
+    display: inline-block;
+    width: 60px;
+    margin: 0 1px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.pie {
+    display: inline-block;
+    margin: 0 1px;
+    padding-left: 40px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.letras {
+    margin: 0 2px;
+}
+
+.abajo {
+    border: none;
+}

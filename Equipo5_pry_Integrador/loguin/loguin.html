@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-top-left-radius: 70px;
+            border-top-right-radius: 70px;
+            width: 100%;
+            max-width: 100%; /* Tamaño máximo para que se vea bien en dispositivos móviles */
+        }
+        .login-form {
+            text-align: center;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .login-form input[type="submit"] {
+            width: 100%;
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <form class="login-form" action="" method="post">
+                <input type="text" name="username" placeholder="Usuario" required><br>
+                <input type="password" name="password" placeholder="Contraseña" required><br>
+                <input type="submit" value="Iniciar Sesión">
+                <p><a href="#">Crear una Cuenta</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

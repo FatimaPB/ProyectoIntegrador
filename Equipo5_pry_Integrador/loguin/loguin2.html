@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Inicio de Sesión</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .background {
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            flex: 1; /* Para ocupar todo el espacio restante */
+            display: flex;
+            justify-content:center;
+            align-items: end;
+        }
+        .login-section {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            width: 100%;
+            max-width: 100%; /* Tamaño máximo para que se vea bien en dispositivos móviles */
+            height: 80%; /* Para ocupar toda la altura disponible */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-form {
+            text-align: center;
+            width: 100%;
+            justify-content: space-around;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 80%;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .login-form input[type="submit"] {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #f6cf21; /* Cambio de color de fondo del botón */
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold; 
+            cursor: pointer;
+            margin: 10px 0px;
+            width: 80%; /* Establecer el ancho del botón al 80% de la pantalla */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Agregar transición para el cambio de color y efecto de brillo */
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: #ffd621; /* Cambio de color de fondo del botón al hacer hover */
+            color: #ffffff;
+            cursor: pointer;
+            box-shadow: 0 0 5px #ffba3a; /* Efecto de brillo al hacer hover */
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+        }
+        .crear-cuenta {
+            color: #000000; /* Cambia el color a tu preferencia */
+            font-weight: bold; /* Puedes hacer que el texto sea negrita */
+            /* Otros estilos que desees agregar */
+        }
+        .olvidaPass {
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="background">
+            
+            <div class="login-section">
+
+                <form class="login-form" action="" method="post">
+                    <h1>Bienvenido de nuevo</h1>
+                    <p>Inicia sesión en tu cuenta</p>
+                    <input type="text" name="username" placeholder="Usuario" required><br>
+                    <input type="password" name="password" placeholder="Contraseña" required><br>
+                    <p><a href="#" class="olvidaPass">Olvidaste la contraseña?</a></p>
+                    <input type="submit" value="Iniciar Sesión">
+                    <p><a href="#">No tienes una cuenta? <span class="crear-cuenta">Crear cuenta</span></a></p>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
